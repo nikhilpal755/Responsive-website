@@ -8,7 +8,9 @@
 .body h1{
     font-size: 60px;
 }
-
+.body{
+    padding : 40px;
+}
 
 
 /* services section */
