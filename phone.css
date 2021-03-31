@@ -1,0 +1,60 @@
+/* navigation section */
+.navbar{
+    flex-direction: column;
+}
+
+
+/* body section */
+.body h1{
+    font-size: 60px;
+}
+
+
+
+/* services section */
+
+#services{
+    flex-direction: column;
+}
+
+#services .card{
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+
+/* partner section */
+.partners{
+    flex-wrap: wrap;
+}
+
+.partners img{
+    width: auto;
+    padding: 5px;
+    height: 70px;
+
+}
+
+
+/* contact section */
+#contact-box form{
+    width: 90%
+}
+
+
+/* footer */
+
+
+/* utility classes */
+
+.h-primary {
+    font-size: 40px;
+}
+.h2-secondary{
+    font-size: 20px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
