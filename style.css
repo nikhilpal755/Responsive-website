@@ -1,0 +1,257 @@
+/* Default */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(109 77 77);
+}
+/* Navgation menu --- */
+.navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.navbar::before{
+    /* to give beautiful background to navigation menu , we use before*/
+    content: "";/* jb kuch bhi nhi tha */
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /*taki content upr aa jaye */
+    opacity: 0.5;
+
+}
+
+/* Navigation : logo */
+.logo{
+    margin: 5px 34px;
+}
+
+.logo img{
+    height: 59px;
+    margin: 0px 4px;
+}
+
+ /* Navigation : items  */
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    list-style : none;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    display: block;/* look this */
+    padding: 3px 20px;
+    border-radius: 5px;  
+    color: white; 
+    font-family:'Ubuntu', sans-serif; 
+}
+ 
+
+.navbar ul li a:hover{
+    color: black;
+    background-color: blanchedalmond;
+    box-shadow: 1.2px 1.2px 1px white;  
+}
+
+
+/* body section or Home Section */
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin-bottom: 120px;
+}
+
+.body::before{
+    content: "";/* jb kuch bhi nhi tha body mein */
+    position: absolute;
+    height: 550px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /*taki content upr aa jaye */
+    opacity: 0.95;
+    /* background: url('bg2.jpg') no-repeat center center/cover; */
+    background: url('https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w') no-repeat center center/cover ;
+}
+
+.body h1{
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 3px 3px black ;
+}
+
+.body p{
+    font-family:'Ubuntu', sans-serif; 
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* services section */
+#services{
+    margin: 29px;
+    display: flex;
+}
+#services .card{
+    border: 2px solid brown ;
+    text-align: center;
+    margin: 2px 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f6d2d2;
+    box-shadow: 5px 5px 6px rgb(0, 0, 0);
+    
+}
+
+
+.card img{
+    height: 175px;
+    /* width: 305px;     */
+    margin: auto;
+    display: block;
+
+}
+.card p{
+    font-family: sans-serif;
+    font-weight: 200%;
+}
+
+/* partner section */
+.partners-container{
+    height: 291px;
+    padding: 42px 0px;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.partners img{
+    padding: 10px 10px;
+    margin:10px 20px;
+    height: 100px;
+}
+
+.partners-container::before{
+    content: "";
+    position: absolute;
+     background: url('bg2.jpg') no-repeat center center/cover; 
+    z-index: -1;
+    opacity: 0.5;
+    height: 40%;
+    width: 100%;
+}
+
+
+/* contact section */
+.contact{
+    padding: 40px 0px;
+    position: relative;
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('contact.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box{
+    padding-bottom: 34px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 4px  ;
+    font-size: 1.2rem;
+    
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* utilities classes */
+.btn{
+    border: 2px solid white;
+    padding: 3px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor:pointer;
+    background-color: #d2a2a2;
+    /* box-shadow: 1.2px 1.2px 1px white; */
+}
+.btn:hover{
+    border: 2px solid black;
+    color: white;
+}
+
+.h-primary{
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px 1px black;
+    padding-top: 40px;
+
+}
+.center{
+    text-align: center;
+}
+
+.h2-secondary{
+    font-family:'Ubuntu', sans-serif ;
+}
